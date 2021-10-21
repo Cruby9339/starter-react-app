@@ -8,6 +8,9 @@ const App = () => {
 };
 
 
+
+
+
 // Take the react component and show it on the screen
 ReactDOM.render(
 	<App />,
