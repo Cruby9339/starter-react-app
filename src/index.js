@@ -1,26 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentDetail from './CommentDetail';
 import faker from 'faker';
+import CommentDetail from './CommentDetail';
+import ApprovalCard from "./ApprovalCard";
+
+
+
 
 const App = () => {
 	return (
 		<div className="ui container comments">
-			<CommentDetail
-				author={faker.name.findName()}
-				image={faker.image.avatar()}
-				content={faker.lorem.sentences()}
-			/>
-			<CommentDetail
-				author={faker.name.findName()}
-				image={faker.image.avatar()}
-				content={faker.lorem.sentences()}
-			/>
-			<CommentDetail
-				author={faker.name.findName()}
-				image={faker.image.avatar()}
-				content={faker.lorem.sentences()}
-			/>
+			<ApprovalCard>
+				<CommentDetail
+					author={faker.name.findName()}
+					image={faker.image.avatar()}
+					content={faker.lorem.sentences()}
+				/>
+			</ApprovalCard>
+
+			<ApprovalCard>
+				<CommentDetail
+					author={faker.name.findName()}
+					image={faker.image.avatar()}
+					content={faker.lorem.sentences()}
+				/>
+			</ApprovalCard>
+
+			<ApprovalCard>
+				<CommentDetail
+					author={faker.name.findName()}
+					image={faker.image.avatar()}
+					content={faker.lorem.sentences()}
+				/>
+			</ApprovalCard>
 		</div>
 	);
 }
